@@ -6,7 +6,7 @@ import {
   Wrapper,
 } from './styles'
 import coffeeDeliveryLogo from '../../assets/Logo.png'
-import { MapPin } from '@phosphor-icons/react'
+import { MapPin, ShoppingCart } from '@phosphor-icons/react'
 
 export function Header() {
   return (
@@ -19,7 +19,9 @@ export function Header() {
           <MapPin size={16} />
           <span>Porto Alegre, RS</span>
         </LocationButton>
-        <CartButton>Cart Button</CartButton>
+        <CartButton>
+          <ShoppingCart size={18} />
+        </CartButton>
       </ButtonsWrapper>
     </Wrapper>
   )

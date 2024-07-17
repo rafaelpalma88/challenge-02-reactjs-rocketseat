@@ -32,4 +32,8 @@ export const LocationButton = styled(BaseButton)`
   border: 1px solid ${(props) => props.theme['black']};
 `
 
-export const CartButton = styled(BaseButton)``
+export const CartButton = styled(BaseButton)`
+  background-color: ${(props) => props.theme['yellow-light']};
+  color: ${(props) => props.theme['yellow-dark']};
+  border: 1px solid ${(props) => props.theme['yellow-light']};
+`
