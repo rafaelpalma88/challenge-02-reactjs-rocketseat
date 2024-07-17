@@ -4,14 +4,14 @@ import {
   LocationButton,
   Logo,
   Wrapper,
-} from './styles'
-import coffeeDeliveryLogo from '../../assets/Logo.png'
-import { MapPin, ShoppingCart } from '@phosphor-icons/react'
+} from "./styles";
+import coffeeDeliveryLogo from "../../assets/Logo.png";
+import { MapPin, ShoppingCart } from "@phosphor-icons/react";
 
 export function Header() {
   return (
     <Wrapper>
-      <img src={coffeeDeliveryLogo} alt='Logotipo Coffee Delivery' />
+      <img src={coffeeDeliveryLogo} alt="Logotipo Coffee Delivery" />
       <Logo />
 
       <ButtonsWrapper>
@@ -24,5 +24,5 @@ export function Header() {
         </CartButton>
       </ButtonsWrapper>
     </Wrapper>
-  )
+  );
 }

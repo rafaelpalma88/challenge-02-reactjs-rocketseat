@@ -1,4 +1,4 @@
-import { BannerHome } from '../../components/BannerHome'
+import { BannerHome } from "../../components/BannerHome";
 
 export function Home() {
   // function handleCreateOrder() {
@@ -11,5 +11,5 @@ export function Home() {
       <button onClick={handleCreateOrder}>Go to checkout</button> */}
       <BannerHome />
     </div>
-  )
+  );
 }

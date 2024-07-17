@@ -1,34 +1,41 @@
-import ImagemBannerHome from '../../assets/Imagem.png'
-import { Wrapper } from './styles'
+import ImagemBannerHome from "../../assets/Imagem.png";
+import {
+  BoxesItems,
+  BoxItem,
+  Description,
+  TextContent,
+  Title,
+  Wrapper,
+} from "./styles";
 
 export function BannerHome() {
   return (
     <Wrapper>
-      <div>
-        <h2>Encontre o café perfeito para qualquer hora do dia</h2>
-        <p>
+      <TextContent>
+        <Title>Encontre o café perfeito para qualquer hora do dia</Title>
+        <Description>
           Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
           hora
-        </p>
+        </Description>
 
-        <div>
-          <div>
+        <BoxesItems>
+          <BoxItem>
             <span>Compra simples e segura</span>
-          </div>
-          <div>
+          </BoxItem>
+          <BoxItem>
             <span>Embalagem mantém o café intacto.</span>
-          </div>
-          <div>
+          </BoxItem>
+          <BoxItem>
             <span>Entrega rápida e rastreável</span>
-          </div>
-          <div>
+          </BoxItem>
+          <BoxItem>
             <span>O café chega fresquinho até você</span>
-          </div>
-        </div>
-      </div>
+          </BoxItem>
+        </BoxesItems>
+      </TextContent>
       <div>
-        <img src={ImagemBannerHome} alt='' />
+        <img src={ImagemBannerHome} alt="" />
       </div>
     </Wrapper>
-  )
+  );
 }
