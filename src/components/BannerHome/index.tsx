@@ -1,11 +1,16 @@
+
 import ImagemBannerHome from "../../assets/Imagem.png";
 import {
-  BoxesItems,
+  BoxItems,
   BoxItem,
   Description,
   TextContent,
   Title,
   Wrapper,
+  CustomShoppingCart,
+  CustomTimer,
+  CustomPackage,
+  CustomCoffee,
 } from "./styles";
 
 export function BannerHome() {
@@ -18,20 +23,24 @@ export function BannerHome() {
           hora
         </Description>
 
-        <BoxesItems>
+        <BoxItems>
           <BoxItem>
+            <CustomShoppingCart size={30} />
             <span>Compra simples e segura</span>
           </BoxItem>
           <BoxItem>
+            <CustomTimer size={30} />
             <span>Embalagem mantém o café intacto.</span>
           </BoxItem>
           <BoxItem>
+            <CustomPackage size={30} />
             <span>Entrega rápida e rastreável</span>
           </BoxItem>
           <BoxItem>
+            <CustomCoffee size={30} />
             <span>O café chega fresquinho até você</span>
           </BoxItem>
-        </BoxesItems>
+        </BoxItems>
       </TextContent>
       <div>
         <img src={ImagemBannerHome} alt="" />
