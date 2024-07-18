@@ -1,4 +1,5 @@
 import { BannerHome } from "../../components/BannerHome";
+import { ProductsList } from "../../components/ProductsLIst";
 
 export function Home() {
   // function handleCreateOrder() {
@@ -10,6 +11,7 @@ export function Home() {
       {/* Home
       <button onClick={handleCreateOrder}>Go to checkout</button> */}
       <BannerHome />
+      <ProductsList />
     </div>
   );
 }
