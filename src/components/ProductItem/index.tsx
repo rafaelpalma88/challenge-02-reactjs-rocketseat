@@ -1,10 +1,28 @@
-import { ButtonsWrapper, Description, Title, Wrapper } from './styles';
+import {
+  ButtonsWrapper,
+  Description,
+  ImageContainer,
+  Label,
+  ProductImage,
+  Title,
+  Wrapper,
+} from './styles';
 
-export function ProductItem() {
+interface ProductItemProps {
+  productImage: string;
+  productTitle: string;
+}
+
+export function ProductItem({ productImage, productTitle }: ProductItemProps) {
   return (
     <Wrapper>
-      <p>Tradicional</p>
-      <Title>Expresso Tradicional</Title>
+      <ImageContainer>
+        <ProductImage src={productImage} alt="Product" />
+      </ImageContainer>
+      <div>
+        <Label>Tradicional</Label>
+      </div>
+      <Title>{productTitle}</Title>
       <Description>
         O tradicional café feito com água quente e grãos moídos
       </Description>

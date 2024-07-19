@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const ButtonsWrapper = styled.div`
   justify-content: space-between;
 `;
 
-export const Logo = styled.div``;
+export const LogoImg = styled.img``;
 
 export const BaseButton = styled.button`
   display: flex;
@@ -27,13 +27,13 @@ export const BaseButton = styled.button`
 `;
 
 export const LocationButton = styled(BaseButton)`
-  background-color: ${(props) => props.theme["purple-light"]};
-  color: ${(props) => props.theme["purple-dark"]};
+  background-color: ${props => props.theme['purple-light']};
+  color: ${props => props.theme['purple-dark']};
   border: 0px;
 `;
 
 export const CartButton = styled(BaseButton)`
-  background-color: ${(props) => props.theme["yellow-light"]};
-  color: ${(props) => props.theme["yellow-dark"]};
+  background-color: ${props => props.theme['yellow-light']};
+  color: ${props => props.theme['yellow-dark']};
   border: 0px;
 `;

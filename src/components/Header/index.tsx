@@ -2,18 +2,19 @@ import {
   ButtonsWrapper,
   CartButton,
   LocationButton,
-  Logo,
+  LogoImg,
   Wrapper,
-} from "./styles";
-import coffeeDeliveryLogo from "../../assets/Logo.png";
-import { MapPin, ShoppingCart } from "@phosphor-icons/react";
+} from './styles';
+import coffeeDeliveryLogo from '../../assets/Logo.png';
+import { MapPin, ShoppingCart } from '@phosphor-icons/react';
+import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
     <Wrapper>
-      <img src={coffeeDeliveryLogo} alt="Logotipo Coffee Delivery" />
-      <Logo />
-
+      <Link to="/">
+        <LogoImg src={coffeeDeliveryLogo} alt="Logotipo Coffee Delivery" />
+      </Link>
       <ButtonsWrapper>
         <LocationButton>
           <MapPin size={16} />

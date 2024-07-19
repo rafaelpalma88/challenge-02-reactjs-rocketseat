@@ -10,12 +10,13 @@ export const Title = styled.h2`
 `;
 
 export const ListItems = styled.div`
-  height: 40rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 `;
 
 export const ListItem = styled.div`
-  flex: 0 0 25%;
   box-sizing: border-box;
+  flex: 0 0 calc(25% - 2rem);
+  padding-top: 1rem;
 `;

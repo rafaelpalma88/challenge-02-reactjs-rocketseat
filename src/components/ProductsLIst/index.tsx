@@ -1,5 +1,6 @@
-import { ProductItem } from "../ProductItem";
-import { ListItem, ListItems, Title, Wrapper } from "./styles";
+import { ProductItem } from '../ProductItem';
+import { ListItem, ListItems, Title, Wrapper } from './styles';
+import imgProductExpressoTradicional from '../../assets/expresso_tradicional.png';
 
 export function ProductsList() {
   return (
@@ -7,27 +8,90 @@ export function ProductsList() {
       <Title>Nossos cafés</Title>
       <ListItems>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Expresso Tradicional"
+          />
         </ListItem>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Expresso Americano"
+          />
         </ListItem>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Expresso Cremoso"
+          />
         </ListItem>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Expresso Gelado"
+          />
         </ListItem>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Café com Leite"
+          />
         </ListItem>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Latte"
+          />
         </ListItem>
         <ListItem>
-          <ProductItem />
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Capuccino"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Macchiato"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Mocaccino"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Chocolate Quente"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Cubano"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Havaiano"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Árabe"
+          />
+        </ListItem>
+        <ListItem>
+          <ProductItem
+            productImage={imgProductExpressoTradicional}
+            productTitle="Irlandês"
+          />
         </ListItem>
       </ListItems>
     </Wrapper>
-  )
+  );
 }
