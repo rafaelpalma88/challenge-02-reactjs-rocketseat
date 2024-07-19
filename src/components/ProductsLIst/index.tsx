@@ -1,6 +1,7 @@
 import { ProductItem } from '../ProductItem';
 import { ListItem, ListItems, Title, Wrapper } from './styles';
 import imgProductExpressoTradicional from '../../assets/expresso_tradicional.png';
+import imgProductExpressoAmericano from '../../assets/expresso_americano.png';
 
 export function ProductsList() {
   return (
@@ -15,7 +16,7 @@ export function ProductsList() {
         </ListItem>
         <ListItem>
           <ProductItem
-            productImage={imgProductExpressoTradicional}
+            productImage={imgProductExpressoAmericano}
             productTitle="Expresso Americano"
           />
         </ListItem>

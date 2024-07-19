@@ -19,4 +19,8 @@ export const ListItem = styled.div`
   box-sizing: border-box;
   flex: 0 0 calc(25% - 2rem);
   padding-top: 1rem;
+
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+  }
 `;

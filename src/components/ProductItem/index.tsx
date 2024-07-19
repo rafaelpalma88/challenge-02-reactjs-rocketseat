@@ -1,8 +1,12 @@
+import { ShoppingCart } from '@phosphor-icons/react';
 import {
+  ButtonAddToCart,
+  ButtonQty,
   ButtonsWrapper,
   Description,
   ImageContainer,
   Label,
+  Price,
   ProductImage,
   Title,
   Wrapper,
@@ -27,9 +31,15 @@ export function ProductItem({ productImage, productTitle }: ProductItemProps) {
         O tradicional café feito com água quente e grãos moídos
       </Description>
       <ButtonsWrapper>
-        <p>R$ 9,90</p>
-        <p>+ 1 -</p>
-        <p>Cart</p>
+        <Price>
+          R$ <span>9,90</span>
+        </Price>
+        <ButtonQty>
+          <span>-</span> 1 <span>+</span>
+        </ButtonQty>
+        <ButtonAddToCart>
+          <ShoppingCart size={20} />
+        </ButtonAddToCart>
       </ButtonsWrapper>
     </Wrapper>
   );

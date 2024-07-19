@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 
 export const ImageContainer = styled.div`
   position: relative;
-  height: 120px;
+  height: 110px;
 `;
 
 export const ProductImage = styled.img`
@@ -45,7 +45,7 @@ export const Label = styled.span`
   ${mixins.fonts.tag};
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
@@ -54,4 +54,49 @@ export const Label = styled.span`
 
 export const ButtonsWrapper = styled.p`
   display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+`;
+
+export const Price = styled.p`
+  ${mixins.fonts.textS};
+  color: ${props => props.theme['base-text']};
+
+  span {
+    ${mixins.fonts.titleM};
+  }
+`;
+
+export const ButtonQty = styled.div`
+  background-color: ${props => props.theme['base-button']};
+  border-radius: 6px;
+  ${mixins.fonts.textM};
+  color: ${props => props.theme['base-title']};
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  span {
+    display: inline-block;
+    color: ${props => props.theme['purple']};
+    /* font-weight: bold; */
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+`;
+
+export const ButtonAddToCart = styled.button`
+  display: flex;
+  border: 0px;
+  border-radius: 10px;
+  background-color: ${props => props.theme['purple-dark']};
+  color: ${props => props.theme['white']};
+  height: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 `;
