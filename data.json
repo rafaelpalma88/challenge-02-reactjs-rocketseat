@@ -1,0 +1,117 @@
+{
+  "coffees": [
+    {
+      "id": "1",
+      "title": "Expresso tradicional",
+      "image": "expresso_tradicional.png",
+      "features": ["Tradicional"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "2",
+      "title": "Expresso Americano",
+      "image": "expresso_americano.png",
+      "features": ["Tradicional"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "3",
+      "title": "Expresso Cremoso",
+      "image": "expresso_cremoso.png",
+      "features": ["Tradicional"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "4",
+      "title": "Expresso Gelado",
+      "image": "expresso_gelado.png",
+      "features": ["Tradicional", "Gelado"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "5",
+      "title": "Café com Leite",
+      "image": "cafe_com_leite.png",
+      "features": ["Tradicional", "Com Leite"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "6",
+      "title": "Latte",
+      "image": "latte.png",
+      "features": ["Tradicional", "Com Leite"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "7",
+      "title": "Capuccino",
+      "image": "capuccino.png",
+      "features": ["Tradicional", "Com Leite"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "8",
+      "title": "Macchiato",
+      "image": "macchiato.png",
+      "features": ["Tradicional", "Com Leite"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "9",
+      "title": "Mocaccino",
+      "image": "mocaccino.png",
+      "features": ["Tradicional", "Com Leite"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "10",
+      "title": "Chocolate Quente",
+      "image": "chocolate_quente.png",
+      "features": ["Especial", "Com Leite"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "11",
+      "title": "Cubano",
+      "image": "cubano.png",
+      "features": ["Especial", "Alcoolico", "Gelado"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "12",
+      "title": "Havaiano",
+      "image": "havaiano.png",
+      "features": ["Especial"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "13",
+      "title": "Árabe",
+      "image": "arabe.png",
+      "features": ["Especial"],
+      "price": 9.9,
+      "quantity": 0
+    },
+    {
+      "id": "14",
+      "title": "Irlandês",
+      "image": "irlandes.png",
+      "features": ["Especial", "Alcoolico"],
+      "price": 9.9,
+      "quantity": 0
+    }
+  ]
+}
+
