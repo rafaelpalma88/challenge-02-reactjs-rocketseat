@@ -5,6 +5,11 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`

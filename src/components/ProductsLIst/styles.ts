@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 import { mixins } from '../../styles/mixins';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  margin-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
 
 export const Title = styled.h2`
   color: ${props => props.theme['base-subtitle']};

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { mixins } from "../../styles/mixins";
-import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react";
+import styled from 'styled-components';
+import { mixins } from '../../styles/mixins';
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -8,6 +8,17 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding-top: 4rem;
   padding-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+    }
+
+    flex-direction: column;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -22,7 +33,6 @@ export const Description = styled.p`
 
 export const TextContent = styled.div`
   padding-right: 2rem;
-
 `;
 
 export const BoxItems = styled.div`
@@ -33,7 +43,7 @@ export const BoxItems = styled.div`
 export const BoxItem = styled.div`
   flex: 1 1 50%;
   box-sizing: border-box;
-  color: ${(props) => props.theme["base-text"]};
+  color: ${props => props.theme['base-text']};
   ${mixins.fonts.textM};
   display: flex;
   align-items: center;
@@ -46,32 +56,32 @@ export const BoxItem = styled.div`
 `;
 
 export const CustomShoppingCart = styled(ShoppingCart)`
-  color: ${(props) => props.theme["white"]};
-  background-color: ${(props) => props.theme["yellow-dark"]};
+  color: ${props => props.theme['white']};
+  background-color: ${props => props.theme['yellow-dark']};
   border-radius: 50%;
   border: 0px;
   padding: 0.5rem;
 `;
 
 export const CustomTimer = styled(Timer)`
-  color: ${(props) => props.theme["white"]};
-  background-color: ${(props) => props.theme["yellow"]};
+  color: ${props => props.theme['white']};
+  background-color: ${props => props.theme['yellow']};
   border-radius: 50%;
   border: 0px;
   padding: 0.5rem;
 `;
 
 export const CustomPackage = styled(Package)`
-  color: ${(props) => props.theme["white"]};
-  background-color: ${(props) => props.theme["base-text"]};
+  color: ${props => props.theme['white']};
+  background-color: ${props => props.theme['base-text']};
   border-radius: 50%;
   border: 0px;
   padding: 0.5rem;
 `;
 
 export const CustomCoffee = styled(Coffee)`
-  color: ${(props) => props.theme["white"]};
-  background-color: ${(props) => props.theme["purple"]};
+  color: ${props => props.theme['white']};
+  background-color: ${props => props.theme['purple']};
   border-radius: 50%;
   border: 0px;
   padding: 0.5rem;
