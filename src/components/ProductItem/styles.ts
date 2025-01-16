@@ -38,6 +38,11 @@ export const Description = styled.p`
   ${mixins.fonts.textS};
 `;
 
+export const WrapperLabel = styled.div`
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+`;
+
 export const Label = styled.span`
   background-color: ${props => props.theme['yellow-light']};
   color: ${props => props.theme['yellow-dark']};
@@ -45,11 +50,11 @@ export const Label = styled.span`
   ${mixins.fonts.tag};
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  margin-right: 0.5rem;
 `;
 
 export const ButtonsWrapper = styled.p`

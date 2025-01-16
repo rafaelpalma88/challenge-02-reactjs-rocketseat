@@ -99,6 +99,7 @@ export function ProductsList() {
               image={item.image}
               title={item.title}
               price={item.price}
+              features={item.features}
             />
           </ListItem>
         ))}
